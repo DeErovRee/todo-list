@@ -1,0 +1,57 @@
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #D2D2D2;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0A1F32;
+}
+
+.functionalPanel {
+  margin: 10px;
+}
+
+.task {
+  border: 1px solid #2D384A;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #344756;
+}
+
+.task .taskHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.task .files {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.task .files .file {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  background-color: bisque;
+  margin: 5px;
+}
+
+h2 p {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=App.css.map */

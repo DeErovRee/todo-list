@@ -1,47 +1,106 @@
 * {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #D2D2D2;
 }
 
 body {
   margin: 0 auto;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: #0A1F32;
 }
 
 .functionalPanel {
   margin: 10px;
 }
+.functionalPanel form {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+.functionalPanel form button, .functionalPanel form input {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.functionalPanel form .addTaskBtn {
+  font-weight: bold;
+  height: 50px;
+  box-sizing: border-box;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px 0px 0px 10px;
+  background-color: rgb(255, 76, 43);
+  color: white;
+}
+.functionalPanel form .inputTask {
+  height: 50px;
+  box-sizing: border-box;
+  padding: 5px 5px 5px 10px;
+  border-right: 1px solid gainsboro;
+  border-top: 2px solid rgb(255, 76, 43);
+  border-bottom: 2px solid rgb(255, 76, 43);
+}
+.functionalPanel form .inputTask::-moz-placeholder {
+  color: gainsboro;
+}
+.functionalPanel form .inputTask:-ms-input-placeholder {
+  color: gainsboro;
+}
+.functionalPanel form .inputTask::placeholder {
+  color: gainsboro;
+}
+.functionalPanel .delAllCompTaskBtn {
+  padding: 5px 10px 5px 10px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(255, 76, 43);
+  color: white;
+  margin-top: 10px;
+  font-weight: bold;
+}
 
 .task {
+  position: relative;
   border: 1px solid #2D384A;
   border-radius: 20px;
   margin: 10px;
   padding: 10px;
   background-color: #344756;
 }
-
 .task .taskHead {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
+.task .delBtn {
+  right: 10px;
+  position: absolute;
+  top: 10px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: rgb(255, 76, 43);
+  color: white;
+}
+.task .compliteStatus {
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  background-color: darkred;
+  position: absolute;
+  right: 10px;
+  top: 50px;
+}
+.task .compliteToggle {
+  position: absolute;
+  right: 18px;
+  top: 50px;
+}
 .task .files {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .task .files .file {
   height: 50px;
   width: 50px;
@@ -50,8 +109,11 @@ body {
   margin: 5px;
 }
 
-h2 p {
+h1 h2 h3 h4 p {
   margin: 0;
   padding: 0;
 }
-/*# sourceMappingURL=App.css.map */
+
+.complite {
+  background-color: darkgreen !important;
+}/*# sourceMappingURL=App.css.map */

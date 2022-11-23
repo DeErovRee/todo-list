@@ -16,7 +16,7 @@ export function App() {
         'second',
         'last'
       ],
-      complite: false,
+      complite: true,
     },
     {
       heading: 'Give the book away',

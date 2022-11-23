@@ -13,9 +13,57 @@ body {
 
 .functionalPanel {
     margin: 10px;
+
+    form {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+
+        button, input {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+        .addTaskBtn {
+            font-weight: bold;
+            height: 50px;
+            box-sizing: border-box;
+            border: none;
+            padding: 5px 10px 5px 10px;
+            border-radius: 10px 0px 0px 10px;
+            background-color: rgb(255, 76, 43);
+            color: white;
+        }
+    
+        .inputTask {
+            height: 50px;
+            box-sizing: border-box;
+            padding: 5px 5px 5px 10px;
+            border-right: 1px solid gainsboro;
+            border-top: 2px solid rgb(255, 76, 43);
+            border-bottom: 2px solid rgb(255, 76, 43);
+
+            &::placeholder {
+                color: gainsboro;
+            }
+        }
+
+    }
+
+    .delAllCompTaskBtn {
+        padding: 5px 10px 5px 10px;
+        height: 50px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(255, 76, 43);
+        color: white;
+        margin-top: 10px;
+        font-weight: bold;
+    }
 }
 
 .task {
+    position: relative;
     border: 1px solid #2D384A;
     border-radius: 20px;
     margin: 10px;
@@ -25,6 +73,33 @@ body {
     .taskHead {
         display: flex;
         align-items: center;
+    }
+    
+    .delBtn {
+        right: 10px;
+        position: absolute;
+        top: 10px;
+        border: none;
+        border-radius: 10px;
+        padding: 5px 10px;
+        background-color: rgb(255, 76, 43);
+        color: white;
+    }
+
+    .compliteStatus {
+        height: 30px;
+        width: 30px;
+        border-radius: 10px;
+        background-color: darkred;
+        position: absolute;
+        right: 10px;
+        top: 50px;
+    }
+
+    .compliteToggle {
+        position: absolute;
+        right: 18px;
+        top: 50px;
     }
 
     .files {
@@ -40,9 +115,11 @@ body {
     }
 }
 
-h2 p {
+h1 h2 h3 h4 p {
     margin: 0;
     padding: 0;
 }
 
-
+.complite {
+    background-color: darkgreen !important;
+}
